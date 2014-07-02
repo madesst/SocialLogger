@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database Name="main" EntityNamespace="SocialLogger" ContextNamespace="SocialLogger" Class="SocialLoggerDataContext" xmlns:ed="http://devart.com/schemas/EntityDeveloper/1.0" ed:Guid="f1aa770c-4ea1-45ef-b00e-d1b47aca3f10" Provider="Devart.Data.SQLite.Linq.Provider.SQLiteDataProvider, Devart.Data.SQLite.Linq" Extended="true" xmlns="http://schemas.devart.com/linqconnect/mapping">
+  <Connection Mode="ConnectionString" ConnectionString="Data Source=&quot;\\psf\Home\Documents\Visual Studio 2013\Projects\SocialLogger\SocialLogger\database.db&quot;;FailIfMissing=False" Provider="Devart.Data.SQLite" />
+  <Table Name="LogEntries" Member="LogEntries">
+    <Type Name="LogEntry" ed:Guid="55e89d0d-f93e-4e57-9dd4-c09076e86aff">
+      <Column Name="Id" Type="System.Int32" AutoSync="OnInsert" DbType="integer NOT NULL" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" UpdateCheck="Always" ed:ValidateRequired="True" ed:Guid="9134c688-ac7c-496e-aaa5-9cc525a992d1" />
+      <Column Name="StartAt" Type="System.DateTime" DbType="datetime NOT NULL" CanBeNull="false" UpdateCheck="Never" ed:ValidateRequired="True" ed:Guid="5ca3c77c-32e0-4be4-bc3f-b3c21927a94c" />
+      <Column Name="EndAt" Type="System.DateTime" DbType="datetime" CanBeNull="true" UpdateCheck="Never" ed:ValidateRequired="False" ed:Guid="1b3cf429-283e-44ee-a014-aa924f3633cf" />
+    </Type>
+  </Table>
+</Database>

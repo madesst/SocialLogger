@@ -1,0 +1,15 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:local="clr-namespace:SocialLogger;assembly=SocialLogger" x:Name="Window" x:Class="SocialLogger.MainWindow"
+        Title="MainWindow" Height="329.091" Width="482.477">
+    <Grid>
+        <DataGrid x:Name="DataGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,-10" IsSynchronizedWithCurrentItem="True" ColumnWidth="30" AutoGenerateColumns="False" ItemsSource="{Binding LogEntriesDTOs, ElementName=Window}" Background="White">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=Id}" Width="30" Header="ID" IsReadOnly="True" Visibility="Collapsed" />
+                <DataGridTextColumn Binding="{Binding Path=StartAt}" Width="100" Header="Начало сессии" IsReadOnly="True" />
+                <DataGridTextColumn Binding="{Binding Path=EndAt}" Width="100" Header="Конец сессии" IsReadOnly="True" />
+                <DataGridTextColumn Binding="{Binding Path=Duration}" Width="100" Header="Длительность" IsReadOnly="True" Foreground="Black" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
